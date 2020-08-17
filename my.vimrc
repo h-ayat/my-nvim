@@ -1,5 +1,5 @@
 inoremap jk <Esc>
-
+set tabstop=4
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " tablike buffers
@@ -53,7 +53,7 @@ function! ToggleNetrw()
     endif
 endfunction
 
-let g:NERDTreeShowIgnoredStatus = 0
+let g:NERDTreeGitStatusShowIgnored = 0
 
 " Add your own mapping. For example:
 " noremap <silent> <C-E> :call ToggleNetrw()<CR>
