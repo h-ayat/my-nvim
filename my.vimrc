@@ -108,5 +108,9 @@ nnoremap <M-J> :bp<CR>
 " Highlight symbol under cursor using coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+nmap <space>gs :G<CR>
+nmap <space>gh :diffget //3<CR>
+nmap <space>gu :diffget //2<CR>
+
 
 
