@@ -74,8 +74,11 @@ set autowriteall
 
 " fzf config
 
+let g:fzf_preview_window = 'right:60%'
+"let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
-nnoremap <C-p> :FZF<CR>
+"nnoremap <C-p> :FZF<CR>
+nnoremap <C-p> :Files<CR>
 nnoremap <C-a><C-f> :Ag<Space>
 nnoremap <C-b> :Buffers<CR>
 let g:fzf_layout = { 'up': '~30%' }
@@ -111,6 +114,9 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <space>gs :G<CR>
 nmap <space>gh :diffget //3<CR>
 nmap <space>gu :diffget //2<CR>
-
+nnoremap <space>h :wincmd h<CR>
+nnoremap <space>j :wincmd j<CR>
+nnoremap <space>k :wincmd k<CR>
+nnoremap <space>l :wincmd l<CR>
 
 
