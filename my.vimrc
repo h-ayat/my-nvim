@@ -79,7 +79,7 @@ let g:fzf_preview_window = 'right:40%'
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
 "nnoremap <C-p> :FZF<CR>
 nnoremap <C-p> :Files<CR>
-nnoremap <C-a><C-f> :Ag<Space>
+nnoremap <C-a><C-f> :Ag<CR>
 nnoremap <C-b> :Buffers<CR>
 let g:fzf_layout = { 'up': '~30%' }
 
@@ -119,4 +119,7 @@ nnoremap <space>j :wincmd j<CR>
 nnoremap <space>k :wincmd k<CR>
 nnoremap <space>l :wincmd l<CR>
 
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 
+nnoremap <space>gc :GBranches<CR>
+nnoremap <space>ga :Git fetch --all<CR>

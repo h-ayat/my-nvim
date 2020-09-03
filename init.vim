@@ -16,6 +16,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'ryanoasis/vim-devicons'
+Plug 'stsewd/fzf-checkout.vim'
 
 
 call plug#end()
