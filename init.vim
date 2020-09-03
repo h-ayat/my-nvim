@@ -41,6 +41,6 @@ set ru
 
 set encoding=UTF-8
 
-source ~/.vim/scala-coc.vimrc
+source ~/.config/nvim/scala-coc.vimrc
 source ~/.config/nvim/my.vimrc
 
