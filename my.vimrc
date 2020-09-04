@@ -107,6 +107,7 @@ let g:fzf_colors =
 "execute "set <M-J>=\eJ"
 nnoremap <M-j> :bn<CR>
 nnoremap <M-J> :bp<CR>
+nnoremap <M-'> :bd<CR>
 
 " Highlight symbol under cursor using coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -119,7 +120,5 @@ nnoremap <space>j :wincmd j<CR>
 nnoremap <space>k :wincmd k<CR>
 nnoremap <space>l :wincmd l<CR>
 
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.7 } }
 
-nnoremap <space>gc :GBranches<CR>
-nnoremap <space>ga :Git fetch --all<CR>

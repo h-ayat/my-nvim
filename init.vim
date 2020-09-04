@@ -44,4 +44,4 @@ set encoding=UTF-8
 
 source ~/.config/nvim/scala-coc.vimrc
 source ~/.config/nvim/my.vimrc
-
+source ~/.config/nvim/git.vimrc
