@@ -63,7 +63,7 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
 
-:command YankUp :call writefile(getreg('"', 1, 1), '/tmp/cl.vi') | exec ':!cat /tmp/cl.vi | xclip -selection clipboard'
+:command! YankUp :call writefile(getreg('"', 1, 1), '/tmp/cl.vi') | exec ':!cat /tmp/cl.vi | xclip -selection clipboard'
 nnoremap <C-a><C-v> :YankUp<CR><CR>
 
 " General configs
@@ -121,4 +121,5 @@ nnoremap <space>k :wincmd k<CR>
 nnoremap <space>l :wincmd l<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.7 } }
+:command! Areload :so $MYVIMRC
 
