@@ -1,0 +1,29 @@
+{
+	"explorer.icon.enableNerdfont": true,
+	"explorer.file.autoReveal":true,
+	"explorer.previewAction.onHover":true,
+	"explorer.floating.border.enable": false,
+	"explorer.keyMappings": {
+		"v": "open:vsplit"
+	},
+	"explorer.presets": {
+		"floating": {
+			"position": "floating",
+			"open-action-strategy": "sourceWindow"
+			
+		},
+		"tab": {
+			"position": "tab",
+			"quit-on-open": true
+		},
+		"floatingTop": {
+			"position": "floating",
+			"floating-position": "center-top",
+			"floating-width": 50,
+			"open-action-strategy": "sourceWindow"
+		},
+		"simplify": {
+			"file-child-template": "[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]"
+		}
+	}
+}

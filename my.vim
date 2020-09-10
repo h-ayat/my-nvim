@@ -78,7 +78,7 @@ let g:fzf_preview_window = 'right:40%'
 "let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git/*"'
 "nnoremap <C-p> :FZF<CR>
-nnoremap <C-p> :Files<CR>
+nmap <space><space> :Files<CR>
 nnoremap <C-a><C-f> :Ag<CR>
 nnoremap <C-b> :Buffers<CR>
 let g:fzf_layout = { 'up': '~30%' }
@@ -122,4 +122,12 @@ nnoremap <space>l :wincmd l<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.7 } }
 :command! Areload :so $MYVIMRC
+
+
+" List all presets
+nmap <space>el :CocList explPresets
+
+" Use preset argument to open it
+nmap <space>ed :CocCommand explorer<CR>
+nnoremap <C-p> :CocCommand explorer --preset floating<CR>
 
