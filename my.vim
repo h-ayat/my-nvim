@@ -129,5 +129,5 @@ nmap <space>el :CocList explPresets
 
 " Use preset argument to open it
 nmap <space>ed :CocCommand explorer<CR>
-nnoremap <C-p> :CocCommand explorer --preset floating<CR>
+nmap <space>p :CocCommand explorer --preset floating<CR>
 
