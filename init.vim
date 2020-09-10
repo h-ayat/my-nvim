@@ -46,4 +46,4 @@ source ~/.config/nvim/BufOnly.vim
 source ~/.config/nvim/scala-coc.vim
 source ~/.config/nvim/my.vim
 source ~/.config/nvim/git.vim
-source ~/.config/nvim/explorer.vim
+
