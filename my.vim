@@ -115,19 +115,18 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <space>gs :G<CR>
 nmap <space>gh :diffget //3<CR>
 nmap <space>gu :diffget //2<CR>
-nnoremap <space>h :wincmd h<CR>
-nnoremap <space>j :wincmd j<CR>
-nnoremap <space>k :wincmd k<CR>
-nnoremap <space>l :wincmd l<CR>
+
+nnoremap <space>wh :wincmd h<CR>
+nnoremap <space>wj :wincmd j<CR>
+nnoremap <space>wk :wincmd k<CR>
+nnoremap <space>wl :wincmd l<CR>
 
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.7 } }
 :command! Areload :so $MYVIMRC
 
 
 " List all presets
-nmap <space>el :CocList explPresets
-
+nmap <space>tl :CocList explPresets
 " Use preset argument to open it
-nmap <space>ed :CocCommand explorer<CR>
-nmap <space>p :CocCommand explorer --preset floating<CR>
-
+nmap <space>td :CocCommand explorer<CR>
+nmap <space>ta :CocCommand explorer --preset floating<CR>
