@@ -2,15 +2,15 @@
 	"explorer.icon.enableNerdfont": true,
 	"explorer.file.autoReveal":true,
 	"explorer.previewAction.onHover":true,
-	"explorer.floating.border.enable": false,
+	"explorer.floating.border.enable": true,
 	"explorer.keyMappings": {
 		"v": "open:vsplit"
 	},
 	"explorer.presets": {
 		"floating": {
 			"position": "floating",
-			"open-action-strategy": "sourceWindow"
-			
+			"open-action-strategy": "sourceWindow",
+			"floating-width": 90
 		},
 		"tab": {
 			"position": "tab",
