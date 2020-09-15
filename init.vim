@@ -12,8 +12,6 @@ Plug 'godlygeek/tabular'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
@@ -44,6 +42,7 @@ set encoding=UTF-8
 
 source ~/.config/nvim/BufOnly.vim
 source ~/.config/nvim/scala-coc.vim
-source ~/.config/nvim/my.vim
-source ~/.config/nvim/git.vim
+source ~/.config/nvim/style.vim
+source ~/.config/nvim/fzf.vim
+source ~/.config/nvim/space.vim
 
