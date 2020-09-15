@@ -19,26 +19,8 @@ Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
-" ------------ Color scheme
-syntax enable
 
-" let g:airline_theme = 'edge'
 
-set termguicolors
-
-" for dark version
-set background=dark
-
-let g:edge_style = 'default'
-let g:edge_disable_italic_comment = 1
-let g:edge_transparent_background = 0
-
-colorscheme edge
-" ------------ Color scheme end
-
-set ru
-
-set encoding=UTF-8
 
 source ~/.config/nvim/BufOnly.vim
 source ~/.config/nvim/scala-coc.vim

@@ -1,5 +1,34 @@
 inoremap jk <Esc>
-set tabstop=4
+
+set tabstop=2
+set encoding=utf-8                      
+syntax enable
+set termguicolors
+set background=dark
+let g:edge_style = 'default'
+let g:edge_disable_italic_comment = 1
+let g:edge_transparent_background = 0
+colorscheme edge
+set fileencoding=utf-8
+set number relativenumber
+set ru
+set autowriteall
+set iskeyword+=-
+set t_Co=256
+set shiftwidth=2
+set smarttab
+set smartindent
+set autoindent
+set updatetime=300
+set timeoutlen=500
+set nobackup
+set nowritebackup
+set hidden
+set shortmess+=c
+set signcolumn=yes
+
+nnoremap <C-s> :w<CR>
+
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " tablike buffers
@@ -21,10 +50,6 @@ let g:airline_section_c = '%f%{CocExtensionStatus()}'
 
 
 " General configs
-set number relativenumber
-set ru
-sy enable
-set autowriteall
 
 
 

@@ -2,20 +2,14 @@
 " Configuration for coc.nvim
 
 " If hidden is not set, TextEdit might fail.
-set hidden
 
 " Some servers have issues with backup files
-set nobackup
-set nowritebackup
 
 " You will have a bad experience with diagnostic messages with the default 4000.
-set updatetime=300
 
 " Don't give |ins-completion-menu| messages.
-set shortmess+=c
 
 " Always show signcolumns
-set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
