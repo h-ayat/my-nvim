@@ -38,3 +38,8 @@ nnoremap <M-'> :bd<CR>
 " Highlight symbol under cursor using coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+
+set timeoutlen=300
+

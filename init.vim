@@ -15,7 +15,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
-
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
@@ -44,5 +44,5 @@ source ~/.config/nvim/BufOnly.vim
 source ~/.config/nvim/scala-coc.vim
 source ~/.config/nvim/style.vim
 source ~/.config/nvim/fzf.vim
-source ~/.config/nvim/space.vim
+source ~/.config/nvim/leader.vim
 
