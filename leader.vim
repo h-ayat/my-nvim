@@ -25,6 +25,8 @@ nnoremap <silent> <leader>p  :<C-u>call CocActionAsync('showSignatureHelp')<cr>
 nnoremap <leader><leader> :Files<CR>
 nnoremap <leader>e :Ag<CR>
 nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>n :BLines<CR>
+nnoremap <leader>r :Lines<CR>
 
 
 let g:which_key_map = {
@@ -33,6 +35,8 @@ let g:which_key_map = {
 	\ 'f': 'Format code'    ,
 	\ 'p': 'Signature'      ,
 	\ 'e': 'Text search(AG)',
+	\ 'n': 'Search in file' ,
+	\ 'r': 'Search in buffers',
   \ }
 
 

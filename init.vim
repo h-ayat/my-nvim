@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'liuchengxu/vim-which-key'
+Plug 'ocaml/vim-ocaml'
 
 call plug#end()
 
