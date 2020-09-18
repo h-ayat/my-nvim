@@ -10,14 +10,27 @@
 :command! KgitRebaseCurrent :!git rebase o/`git branch --show-current`
 :command! KvimReload :so $MYVIMRC
 
+vnoremap Y y:Kyank<CR><CR>
 
 " --------------------------------------------------  Special Section
 " --------------------------------------------------  <leader>
+"  ---- GROUPS -----
 " g: Git
 " w: wincmd
 " m: misc
 " t: explorer
 " c: COC
+" ---- Actions ------
+"  o: Outline
+"  s: Symbols
+"  f: Format
+"  p: Signature helper
+"  e: AG
+"  b: Buffers
+"  n: BLines
+"  r: lines
+"  u: explorer
+"  z: save
 nnoremap <silent> <leader>o  :<C-u>CocList outline<cr> " Find symbol of current document
 nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr> " Search for symbols
 nnoremap <silent> <leader>f  :<C-u>call CocAction('format')<cr>
@@ -27,7 +40,8 @@ nnoremap <leader>e :Ag<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>n :BLines<CR>
 nnoremap <leader>r :Lines<CR>
-
+nnoremap <leader>h :CocCommand explorer --preset floating<CR>
+nnoremap <leader>z :w<CR>
 
 let g:which_key_map = {
 	\ 'o': 'Outline'        ,
@@ -36,7 +50,9 @@ let g:which_key_map = {
 	\ 'p': 'Signature'      ,
 	\ 'e': 'Text search(AG)',
 	\ 'n': 'Search in file' ,
-	\ 'r': 'Search in buffers',
+	\ 'r': 'Search in open buffers',
+	\ 'h': 'Explorer',
+	\ 'z': 'Zave!!',
   \ }
 
 
@@ -99,15 +115,21 @@ let g:which_key_map.m = {
 " --------------------------------------------------  <leader>t
 "   COC-Explorer
 " List all presets
-nnoremap <leader>tl :CocList explPresets
+nnoremap <leader>tl :CocList explPresets<CR>
 " Use preset argument to open it
 nnoremap <leader>td :CocCommand explorer<CR>
 nnoremap <leader>ta :CocCommand explorer --preset floating<CR>
 
+nnoremap <leader>tt :CocCommand explorer --preset floatingTop<CR>
+nnoremap <leader>ts :CocCommand explorer --preset simplify<CR>
+
 let g:which_key_map.t = {
 	\ 'name': '+Explorer',
+	\ 'l': 'Preset list',
 	\ 'a': 'Tree modal',
 	\ 'd': 'Default tree tab',
+	\ 't': 'Floating top',
+	\ 's': 'Simplified',
   \ }
 
 
@@ -130,8 +152,10 @@ nnoremap <leader>cf  <Plug>(coc-format-selected)
 nnoremap <leader>cs  <Plug>(coc-codeaction-selected)
 nnoremap <leader>ca  <Plug>(coc-codeaction)
 nnoremap <leader>cq  <Plug>(coc-fix-current)
+nnoremap <leader>cn :<C-u>CocCommand metals.new-scala-file<CR>
 nnoremap <silent> <leader>cd  :<C-u>CocList diagnostics<cr>
 nnoremap <leader>cl :<C-u>call CocActionAsync('codeLensAction')<CR>
+nnoremap <Leader>ce <Plug>(coc-metals-expand-decoration)
 
 let g:which_key_map.c.e = {
 	\ 'name': '+Extra',
@@ -140,6 +164,8 @@ let g:which_key_map.c.e = {
 	\ 'c': 'Metals TVP Compile',
 	\ 'b': 'Metals TVP Build',
 	\ 'f': 'Metals TVP Reveal',
+	\ 'n': 'New scala file',
+	\ 'e': 'Expand decoration',
   \ }
 " Toggle panel with Tree Views
 nnoremap <silent> <leader>cet :<C-u>CocCommand metals.tvp<CR>

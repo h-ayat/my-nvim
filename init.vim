@@ -28,4 +28,4 @@ source ~/.config/nvim/scala-coc.vim
 source ~/.config/nvim/style.vim
 source ~/.config/nvim/fzf.vim
 source ~/.config/nvim/leader.vim
-
+source ~/.config/nvim/ocaml.vim

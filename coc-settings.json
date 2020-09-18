@@ -1,7 +1,26 @@
 {
+	"languageserver": {
+		"ocaml-lsp": {
+			"command": "opam",
+			"args": [
+				"config",
+				"exec",
+				"--",
+				"ocamllsp"
+			],
+			"filetypes": [
+				"ocaml",
+				"reason"
+			]
+		}
+	},
+	"coc.preferences.formatOnSaveFiletypes": [
+		"scala"
+	],
+	"codeLens.enable": true,
 	"explorer.icon.enableNerdfont": true,
-	"explorer.file.autoReveal":true,
-	"explorer.previewAction.onHover":true,
+	"explorer.file.autoReveal": true,
+	"explorer.previewAction.onHover": true,
 	"explorer.floating.border.enable": true,
 	"explorer.keyMappings": {
 		"v": "open:vsplit"
