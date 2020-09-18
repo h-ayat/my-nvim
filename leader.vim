@@ -11,6 +11,15 @@
 :command! KvimReload :so $MYVIMRC
 
 vnoremap Y y:Kyank<CR><CR>
+inoremap jk <Esc>
+
+nnoremap <M-j> :bn<CR>
+nnoremap <M-J> :bp<CR>
+nnoremap <M-'> :bd<CR>
+
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+
 
 " --------------------------------------------------  Special Section
 " --------------------------------------------------  <leader>

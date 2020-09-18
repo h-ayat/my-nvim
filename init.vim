@@ -1,7 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'h-ayat/edge'
+"Plug 'h-ayat/edge'
+
+Plug 'morhetz/gruvbox'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -25,7 +27,8 @@ call plug#end()
 
 source ~/.config/nvim/BufOnly.vim
 source ~/.config/nvim/scala-coc.vim
-source ~/.config/nvim/style.vim
 source ~/.config/nvim/fzf.vim
-source ~/.config/nvim/leader.vim
 source ~/.config/nvim/ocaml.vim
+source ~/.config/nvim/leader.vim
+source ~/.config/nvim/style.vim
+
