@@ -71,6 +71,10 @@ nnoremap <leader>gs :G<CR>
 nnoremap <leader>gl :diffget //3<CR>
 nnoremap <leader>gh :diffget //2<CR>
 nnoremap <leader>gb :GBranches<CR>
+nnoremap <leader>gd :Gvdiffsplit<CR>
+
+nnoremap <leader>ggs :GitGutterStageHunk<CR>
+nnoremap <leader>ggu :GitGutterUndoHunk<CR>
 
 nnoremap <leader>gr  :KgitRebaseCurrent
 let g:which_key_map.g = {
@@ -80,6 +84,9 @@ let g:which_key_map.g = {
 	\ 'l' : 'Diff get right',
 	\ 'b' : 'Branch search',
 	\ 'r' : 'Rebase current',
+	\ 'd' : 'Diff current',
+	\ 'ggs': 'Stage Hunk',
+	\ 'ggu': 'Undo Hunk',
   \ }
 
 

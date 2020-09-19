@@ -1,3 +1,4 @@
+syntax on
 set termguicolors
 set t_Co=256
 set t_AB=^[[48;5;%dm
@@ -20,7 +21,6 @@ set nowritebackup
 set hidden
 set shortmess+=c
 set signcolumn=yes
-syntax enable
 
 
 let g:gruvbox_contrast_dark = 'hard'
@@ -60,6 +60,12 @@ let g:airline_section_c = '%f%{CocExtensionStatus()}'
 " Highlight symbol under cursor using coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+if ! exists('g:colors_name') || g:colors_name !=# 'gruvbox'
+    colorscheme gruvbox
+endif
 
+
+"set background = dark
 "autocmd vimenter * colorscheme gruvbox
-colorscheme gruvbox
+"colorscheme gruvbox
+
