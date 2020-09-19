@@ -1,7 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'h-ayat/edge'
 
 Plug 'morhetz/gruvbox'
 
@@ -14,6 +13,8 @@ Plug 'godlygeek/tabular'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'

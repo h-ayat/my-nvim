@@ -72,6 +72,8 @@ nnoremap <leader>gl :diffget //3<CR>
 nnoremap <leader>gh :diffget //2<CR>
 nnoremap <leader>gb :GBranches<CR>
 nnoremap <leader>gd :Gvdiffsplit<CR>
+nnoremap <leader>gv :GV<CR>
+nnoremap <leader>gV :GV 
 
 nnoremap <leader>ggs :GitGutterStageHunk<CR>
 nnoremap <leader>ggu :GitGutterUndoHunk<CR>
@@ -87,6 +89,8 @@ let g:which_key_map.g = {
 	\ 'd' : 'Diff current',
 	\ 'ggs': 'Stage Hunk',
 	\ 'ggu': 'Undo Hunk',
+	\ 'v': 'Graph with GV',
+	\ 'V': 'Graph with GV branches',
   \ }
 
 
