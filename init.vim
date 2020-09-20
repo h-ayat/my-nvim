@@ -2,7 +2,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
+Plug 'h-ayat/edge'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -21,6 +23,7 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'ocaml/vim-ocaml'
 
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 

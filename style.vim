@@ -21,35 +21,23 @@ set nowritebackup
 set hidden
 set shortmess+=c
 set signcolumn=yes
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
 let g:gruvbox_contrast_dark = 'hard'
 
 
-"set background=dark
-"let g:edge_style = 'default'
-"let g:edge_disable_italic_comment = 1
-"let g:edge_transparent_background = 0
-
-"colorscheme edge
-
-
+set background=dark
+let g:edge_style = 'default'
+let g:edge_disable_italic_comment = 1
+let g:edge_transparent_background = 0
 
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1 " tablike buffers
 let g:airline_powerline_fonts = 1
-"let g:airline_theme = 'onedark'
-let g:airline_theme = 'gruvbox'
-"let g:airline_theme = 'deus'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
 let g:airline#extensions#coc#enabled = 1
-"let airline#extensions#coc#error_symbol = 'E:'
-"let airline#extensions#coc#warning_symbol = 'W:'
-"let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
-"let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
-"let g:airline#extensions#ctrlspace#enabled = 1
 
 function! CocExtensionStatus() abort
   return get(g:, 'coc_status', '')
@@ -60,12 +48,13 @@ let g:airline_section_c = '%f%{CocExtensionStatus()}'
 " Highlight symbol under cursor using coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-if ! exists('g:colors_name') || g:colors_name !=# 'gruvbox'
-    colorscheme gruvbox
+let g:onedark_color_overrides = {
+\ "black": {"gui": "#15181b", "cterm": "235", "cterm16": "0" },
+\ "purple": {"gui": "#d74343", "cterm": "12", "cterm16": "2"},
+\}
+
+if ! exists('g:colors_name') || g:colors_name !=# 'tender'
+    colorscheme onedark
 endif
-
-
-"set background = dark
-"autocmd vimenter * colorscheme gruvbox
-"colorscheme gruvbox
-
+set background=dark
+let g:airline_theme='onedark'
