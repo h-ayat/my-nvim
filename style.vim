@@ -58,3 +58,6 @@ if ! exists('g:colors_name') || g:colors_name !=# 'tender'
 endif
 set background=dark
 let g:airline_theme='onedark'
+
+let g:rainbow_active = 1
+

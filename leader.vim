@@ -124,11 +124,21 @@ let g:which_key_map.w = {
 " --------------------------------------------------  <leader>m
 nnoremap <leader>my :Kyank<CR><CR>
 nnoremap <leader>mr :KvimReload<CR>
+nnoremap <leader>mm :Marks<CR>
+nnoremap <leader>md :delm!<CR>:delm A-Z0-9<CR>
+nnoremap <leader>mh :noh<CR>
+nnoremap <leader>mn ]`
+nnoremap <leader>mp [`
 
 let g:which_key_map.m = {
 	\ 'name': '+MISC',
 	\ 'y': 'YankUp',
 	\ 'r': 'Reload vim',
+	\ 'm': 'Marks',
+	\ 'd': 'Delete all marks',
+	\ 'h': 'No Highlight',
+	\ 'n': 'Next mark',
+	\ 'p': 'Prev mark',
   \ }
 
 " --------------------------------------------------  COC-Explorer section

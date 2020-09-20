@@ -22,6 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'ocaml/vim-ocaml'
+Plug 'frazrepo/vim-rainbow'
 
 Plug 'kshenoy/vim-signature'
 call plug#end()
