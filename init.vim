@@ -3,7 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
+Plug 'h-ayat/gruvbox'
 Plug 'h-ayat/edge'
 
 Plug 'vim-airline/vim-airline'
@@ -21,10 +21,12 @@ Plug 'junegunn/gv.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'liuchengxu/vim-which-key'
-Plug 'ocaml/vim-ocaml'
 Plug 'frazrepo/vim-rainbow'
 
 Plug 'kshenoy/vim-signature'
+
+Plug 'ocaml/vim-ocaml'
+Plug 'jordwalke/vim-reasonml'
 call plug#end()
 
 
@@ -33,7 +35,7 @@ call plug#end()
 source ~/.config/nvim/BufOnly.vim
 source ~/.config/nvim/scala-coc.vim
 source ~/.config/nvim/fzf.vim
-source ~/.config/nvim/ocaml.vim
+"source ~/.config/nvim/ocaml.vim
 source ~/.config/nvim/leader.vim
 source ~/.config/nvim/style.vim
 

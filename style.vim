@@ -53,11 +53,15 @@ let g:onedark_color_overrides = {
 \ "purple": {"gui": "#d74343", "cterm": "12", "cterm16": "2"},
 \}
 
-if ! exists('g:colors_name') || g:colors_name !=# 'tender'
-    colorscheme onedark
+if ! exists('g:colors_name') || g:colors_name !=# 'gruvbox'
+    colorscheme gruvbox
 endif
 set background=dark
+"let g:airline_theme='gruvbox'
+
+"colorscheme onedark
 let g:airline_theme='onedark'
+"set background=dark
 
 let g:rainbow_active = 1
 
