@@ -22,7 +22,7 @@ set hidden
 set shortmess+=c
 set signcolumn=yes
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
+set smartcase
 
 let g:gruvbox_contrast_dark = 'hard'
 
@@ -40,7 +40,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#coc#enabled = 1
 
 function! CocExtensionStatus() abort
-  return get(g:, 'coc_status', '')
+	return get(g:, 'coc_status', '')
 endfunction
 let g:airline_section_c = '%f%{CocExtensionStatus()}'
 
@@ -49,12 +49,12 @@ let g:airline_section_c = '%f%{CocExtensionStatus()}'
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 let g:onedark_color_overrides = {
-\ "black": {"gui": "#15181b", "cterm": "235", "cterm16": "0" },
-\ "purple": {"gui": "#d74343", "cterm": "12", "cterm16": "2"},
-\}
+			\ "black": {"gui": "#15181b", "cterm": "235", "cterm16": "0" },
+			\ "purple": {"gui": "#d74343", "cterm": "12", "cterm16": "2"},
+			\}
 
 if ! exists('g:colors_name') || g:colors_name !=# 'gruvbox'
-    colorscheme gruvbox
+	colorscheme gruvbox
 endif
 set background=dark
 "let g:airline_theme='gruvbox'
@@ -64,4 +64,3 @@ let g:airline_theme='onedark'
 "set background=dark
 
 let g:rainbow_active = 1
-
