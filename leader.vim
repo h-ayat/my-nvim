@@ -110,6 +110,10 @@ nnoremap <leader>wj :wincmd j<CR>
 nnoremap <leader>wk :wincmd k<CR>
 nnoremap <leader>wl :wincmd l<CR>
 nnoremap <leader>wo :BOnly<CR>
+nnoremap <silent> <Leader>[ :vertical resize -15<CR>
+nnoremap <silent> <Leader>] :vertical resize +15<CR>
+nnoremap <silent> <Leader>v :vsplit<CR>
+
 
 let g:which_key_map.w = {
 	\ 'name': '+WIN',
@@ -118,6 +122,7 @@ let g:which_key_map.w = {
 	\ 'j': 'Down',
 	\ 'k': 'Up',
 	\ 'o': 'Kill Other',
+	\ 'v': 'Vertical split',
   \ }
 
 " --------------------------------------------------  MISC section
