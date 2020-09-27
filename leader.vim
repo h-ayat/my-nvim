@@ -174,18 +174,18 @@ let g:which_key_map.c = {
 	\ 'a': 'Code Action',
 	\ 'q': 'Quick fix',
 	\ 'l': 'Code lens',
-	\ 'r': 'Rename symbol'
+	\ 'r': 'Rename symbol',
+	\ 'n': 'New',
   \ }
 nnoremap <silent> <leader>cc  :<C-u>CocList commands<cr>
-nnoremap <leader>cr <Plug>(coc-rename)
+nmap <leader>cr <Plug>(coc-rename)
 nnoremap <leader>cf  <Plug>(coc-format-selected)
 nnoremap <leader>cs  <Plug>(coc-codeaction-selected)
-nnoremap <leader>ca  <Plug>(coc-codeaction)
-nnoremap <leader>cq  <Plug>(coc-fix-current)
+nmap <leader>ca  <Plug>(coc-codeaction)
+nmap <leader>cq  <Plug>(coc-fix-current)
 nnoremap <leader>cn :<C-u>CocCommand metals.new-scala-file<CR>
 nnoremap <silent> <leader>cd  :<C-u>CocList diagnostics<cr>
 nnoremap <leader>cl :<C-u>call CocActionAsync('codeLensAction')<CR>
-nnoremap <Leader>ce <Plug>(coc-metals-expand-decoration)
 
 let g:which_key_map.c.e = {
 	\ 'name': '+Extra',
@@ -196,6 +196,7 @@ let g:which_key_map.c.e = {
 	\ 'f': 'Metals TVP Reveal',
 	\ 'n': 'New scala file',
 	\ 'e': 'Expand decoration',
+	\ 'x': 'Extensions',
   \ }
 " Toggle panel with Tree Views
 nnoremap <silent> <leader>cet :<C-u>CocCommand metals.tvp<CR>
@@ -208,8 +209,9 @@ nnoremap <silent> <leader>ceb :<C-u>CocCommand metals.tvp metalsBuild<CR>
 " Reveal current current class (trait or object) in Tree View 'metalsPackages'
 nnoremap <silent> <leader>cef :<C-u>CocCommand metals.revealInTreeView metalsPackages<CR>
 nnoremap <silent> <leader>cel  :<C-u>CocListResume<CR>
-nnoremap <silent> <leader>cee  :<C-u>CocList extensions<cr>
+nnoremap <silent> <leader>cex  :<C-u>CocList extensions<cr>
 
+nnoremap <Leader>cee <Plug>(coc-metals-expand-decoration)
 
 " ======================== Setup which key
 call which_key#register('<Space>', "g:which_key_map")
