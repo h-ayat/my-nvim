@@ -74,6 +74,7 @@ nnoremap <leader>gb :GBranches<CR>
 nnoremap <leader>gd :Gvdiffsplit<CR>
 nnoremap <leader>gv :GV<CR>
 nnoremap <leader>gV :GV 
+nnoremap <leader>gp :Gpush<CR>
 
 nnoremap <leader>ggs :GitGutterStageHunk<CR>
 nnoremap <leader>ggu :GitGutterUndoHunk<CR>
@@ -91,6 +92,7 @@ let g:which_key_map.g = {
 	\ 'ggu': 'Undo Hunk',
 	\ 'v': 'Graph with GV',
 	\ 'V': 'Graph with GV branches',
+	\ 'p': 'Push',
   \ }
 
 
@@ -216,7 +218,7 @@ nnoremap <silent> <leader>cef :<C-u>CocCommand metals.revealInTreeView metalsPac
 nnoremap <silent> <leader>cel  :<C-u>CocListResume<CR>
 nnoremap <silent> <leader>cex  :<C-u>CocList extensions<cr>
 
-nnoremap <Leader>cee <Plug>(coc-metals-expand-decoration)
+nmap <Leader>cee <Plug>(coc-metals-expand-decoration)
 
 " ======================== Setup which key
 call which_key#register('<Space>', "g:which_key_map")

@@ -22,7 +22,7 @@ set hidden
 set shortmess+=c
 set signcolumn=yes
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set smartcase
+set ignorecase
 
 let g:gruvbox_contrast_dark = 'hard'
 
