@@ -107,14 +107,15 @@ let g:which_key_map.g.f = {
 
 " --------------------------------------------------  WINcmd section
 " --------------------------------------------------  <leader>w
-nnoremap <leader>wh :wincmd h<CR>
-nnoremap <leader>wj :wincmd j<CR>
-nnoremap <leader>wk :wincmd k<CR>
-nnoremap <leader>wl :wincmd l<CR>
-nnoremap <leader>wo :BOnly<CR>
-nnoremap <silent> <Leader>[ :vertical resize -15<CR>
-nnoremap <silent> <Leader>] :vertical resize +15<CR>
-nnoremap <silent> <Leader>v :vsplit<CR>
+nnoremap <silent> <leader>wh :wincmd h<CR>
+nnoremap <silent> <leader>wj :wincmd j<CR>
+nnoremap <silent> <leader>wk :wincmd k<CR>
+nnoremap <silent> <leader>wl :wincmd l<CR>
+nnoremap <silent> <leader>wr :wincmd r<CR>
+nnoremap <silent> <leader>wo :BOnly<CR>
+nnoremap <silent> <Leader>w[ :vertical resize -15<CR>
+nnoremap <silent> <Leader>w] :vertical resize +15<CR>
+nnoremap <silent> <Leader>wv :vsplit<CR>
 
 
 let g:which_key_map.w = {
@@ -125,6 +126,7 @@ let g:which_key_map.w = {
 	\ 'k': 'Up',
 	\ 'o': 'Kill Other',
 	\ 'v': 'Vertical split',
+	\ 'r': 'Rotate',
   \ }
 
 " --------------------------------------------------  MISC section
