@@ -1,4 +1,7 @@
 {
+	"suggest.enablePreview":true,
+	"coc.preferences.enableFloatHighlight": true,
+	"coc.preferences.floatQuickpick":true,
 	"languageserver": {
 		"ocaml-lsp": {
 			"command": "opam",

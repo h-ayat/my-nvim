@@ -64,3 +64,4 @@ let g:airline_theme='onedark'
 "set background=dark
 
 let g:rainbow_active = 1
+

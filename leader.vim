@@ -190,7 +190,7 @@ nnoremap <silent> <leader>cc  :<C-u>CocList commands<cr>
 nmap <leader>cr <Plug>(coc-rename)
 nnoremap <leader>cf  <Plug>(coc-format-selected)
 nnoremap <leader>cs  <Plug>(coc-codeaction-selected)
-nmap <leader>ca  <Plug>(coc-codeaction)
+nmap <leader>ca  <Plug>(coc-codeaction-line)
 nmap <leader>cq  <Plug>(coc-fix-current)
 nnoremap <leader>cn :<C-u>CocCommand metals.new-scala-file<CR>
 nnoremap <silent> <leader>cd  :<C-u>CocList diagnostics<cr>
@@ -219,6 +219,8 @@ nnoremap <silent> <leader>ceb :<C-u>CocCommand metals.tvp metalsBuild<CR>
 nnoremap <silent> <leader>cef :<C-u>CocCommand metals.revealInTreeView metalsPackages<CR>
 nnoremap <silent> <leader>cel  :<C-u>CocListResume<CR>
 nnoremap <silent> <leader>cex  :<C-u>CocList extensions<cr>
+
+nnoremap <silent> <leader>cen  :<C-u>CocNext<CR>
 
 nmap <Leader>cee <Plug>(coc-metals-expand-decoration)
 
