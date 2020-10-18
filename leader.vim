@@ -29,6 +29,7 @@ let g:maplocalleader = ','
 " m: misc
 " t: explorer
 " c: COC
+" l: Registers
 " ---- Actions ------
 "  o: Outline
 "  s: Symbols
@@ -40,6 +41,8 @@ let g:maplocalleader = ','
 "  r: lines
 "  u: explorer
 "  z: save
+"  d: Kill to the void
+
 nnoremap <silent> <leader>o  :<C-u>CocList outline<cr> " Find symbol of current document
 nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr> " Search for symbols
 nnoremap <silent> <leader>f  :<C-u>call CocAction('format')<cr>
@@ -51,6 +54,9 @@ nnoremap <leader>n :BLines<CR>
 nnoremap <leader>r :Lines<CR>
 nnoremap <leader>h :CocCommand explorer --preset floating<CR>
 nnoremap <leader>z :w<CR>
+nnoremap <leader>D "_d$
+nnoremap <leader>d "_dw
+vnoremap <leader>d "_d
 
 let g:which_key_map = {
 	\ 'o': 'Outline'        ,
@@ -62,6 +68,18 @@ let g:which_key_map = {
 	\ 'r': 'Search in open buffers',
 	\ 'h': 'Explorer',
 	\ 'z': 'Zave!!',
+	\ 'd': 'Word/Selection => Void',
+	\ 'D': 'End of line',
+  \ }
+
+
+" --------------------------------------------------  Registers section
+" --------------------------------------------------  <leader>l
+
+nnoremap <leader>ll :reg<CR>
+let g:which_key_map.g = {
+	\ 'name': '+Reg',
+	\ 'l' : 'Registers status',
   \ }
 
 
@@ -138,6 +156,8 @@ nnoremap <leader>md :delm!<CR>:delm A-Z0-9<CR>
 nnoremap <leader>mh :noh<CR>
 nnoremap <leader>mn ]`
 nnoremap <leader>mp [`
+nnoremap <leader>mk :Maps<CR>
+nnoremap <leader>mc :Commands<CR>
 
 let g:which_key_map.m = {
 	\ 'name': '+MISC',
@@ -148,6 +168,8 @@ let g:which_key_map.m = {
 	\ 'h': 'No Highlight',
 	\ 'n': 'Next mark',
 	\ 'p': 'Prev mark',
+	\ 'c': 'Commands',
+	\ 'k': 'Key-bindings',
   \ }
 
 " --------------------------------------------------  COC-Explorer section

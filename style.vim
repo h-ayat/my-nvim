@@ -43,6 +43,8 @@ function! CocExtensionStatus() abort
 	return get(g:, 'coc_status', '')
 endfunction
 let g:airline_section_c = '%f%{CocExtensionStatus()}'
+"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
 
 
 " Highlight symbol under cursor using coc-highlight
