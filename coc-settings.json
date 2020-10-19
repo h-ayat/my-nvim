@@ -1,5 +1,4 @@
 {
-	"metals.statusBarEnabled":true,
 	"suggest.enablePreview":true,
 	"coc.preferences.enableFloatHighlight": true,
 	"coc.preferences.floatQuickpick":true,
