@@ -30,13 +30,13 @@ let g:maplocalleader = ','
 " t: explorer
 " c: COC
 " l: Registers
+" b: Buffers
 " ---- Actions ------
 "  o: Outline
 "  s: Symbols
 "  f: Format
 "  p: Signature helper
 "  e: AG
-"  b: Buffers
 "  n: BLines
 "  r: lines
 "  u: explorer
@@ -49,7 +49,6 @@ nnoremap <silent> <leader>f  :<C-u>call CocAction('format')<cr>
 nnoremap <silent> <leader>p  :<C-u>call CocActionAsync('showSignatureHelp')<cr>
 nnoremap <leader><leader> :Files<CR>
 nnoremap <leader>e :Ag<CR>
-nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>n :BLines<CR>
 nnoremap <leader>r :Lines<CR>
 nnoremap <leader>h :CocCommand explorer --preset floating<CR>
@@ -72,6 +71,31 @@ let g:which_key_map = {
 	\ 'D': 'End of line',
   \ }
 
+" --------------------------------------------------  Buffers section
+" --------------------------------------------------  <leader>b
+
+nnoremap <leader>bb :Buffers<CR>
+nnoremap <silent> <leader>bo :BOnly<CR>
+nnoremap <silent> <Leader>b[ :vertical resize -15<CR>
+nnoremap <silent> <Leader>b] :vertical resize +15<CR>
+nnoremap <silent> <Leader>bv :vsplit<CR>
+nnoremap <silent> <Leader>bn :bn<CR>
+nnoremap <silent> <Leader>bp :bp<CR>
+nnoremap <silent> <Leader>bd :bd<CR>
+
+nnoremap <silent> <leader>br :wincmd r<CR>
+
+let g:which_key_map.b = {
+	\ 'name': '+Buffers',
+	\ 'b' : 'Search',
+	\ 'n' : 'Next',
+	\ 'p' : 'Pervious',
+	\ 'o' : 'Kill others',
+	\ 'r' : 'Rotate',
+	\ 'd' : 'Kill this',
+	\ '[' : 'Smaller (V)',
+	\ ']' : 'Larger (V)',
+  \ }
 
 " --------------------------------------------------  Registers section
 " --------------------------------------------------  <leader>l
