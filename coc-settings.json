@@ -25,7 +25,7 @@
 	"explorer.file.autoReveal": true,
 	"explorer.previewAction.onHover": true,
 	"explorer.floating.border.enable": true,
-	"explorer.keyMappings": {
+	"explorer.keyMappings.global": {
 		"v": "open:vsplit"
 	},
 	"explorer.presets": {
