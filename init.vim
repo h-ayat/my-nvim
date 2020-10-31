@@ -9,7 +9,7 @@ Plug 'h-ayat/edge'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'derekwyatt/vim-scala'
-Plug 'pangloss/vim-javascript'
+"Plug 'pangloss/vim-javascript'
 Plug 'junegunn/fzf.vim'
 Plug 'godlygeek/tabular'
 
@@ -17,6 +17,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
+Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
@@ -25,8 +26,8 @@ Plug 'frazrepo/vim-rainbow'
 
 Plug 'kshenoy/vim-signature'
 
-Plug 'ocaml/vim-ocaml'
-Plug 'jordwalke/vim-reasonml'
+"Plug 'ocaml/vim-ocaml'
+"Plug 'jordwalke/vim-reasonml'
 call plug#end()
 
 
