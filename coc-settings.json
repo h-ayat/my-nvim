@@ -3,21 +3,11 @@
 	"metals.showInferredType":true,
 	"suggest.enablePreview":true,
 	"coc.preferences.enableFloatHighlight": true,
-	"coc.preferences.floatQuickpick":true,
+	"suggest.echodocSupport": true,
+	"signature.preferShownAbove":true ,
+	"signature.enable":true ,
+	"signature.target": "echo",
 	"languageserver": {
-		"ocaml-lsp": {
-			"command": "opam",
-			"args": [
-				"config",
-				"exec",
-				"--",
-				"ocamllsp"
-			],
-			"filetypes": [
-				"ocaml",
-				"reason"
-			]
-		}
 	},
 	"coc.preferences.formatOnSaveFiletypes": [
 		"scala"

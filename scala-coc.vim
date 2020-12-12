@@ -11,6 +11,9 @@
 
 " Always show signcolumns
 
+au BufRead,BufNewFile *.sbt,*.sc set filetype=scala
+
+
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
@@ -63,7 +66,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).
-  autocmd FileType scala,ocaml setl formatexpr=CocAction('formatSelected')
+  autocmd FileType scala setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
@@ -73,6 +76,11 @@ command! -nargs=0 Format :call CocAction('format')
 
 " Use `:Fold` to fold current buffer
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" Use CTRL-S for selections ranges.
+" Requires 'textDocument/selectionRange' support of language server.
+nmap <silent> <C-s> <Plug>(coc-range-select)
+xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Trigger for code actions
 " Make sure `"codeLens.enable": true` is set in your coc config
