@@ -8,7 +8,6 @@ Plug 'h-ayat/edge'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'derekwyatt/vim-scala'
 Plug 'pangloss/vim-javascript'
 Plug 'junegunn/fzf.vim'
 Plug 'godlygeek/tabular'

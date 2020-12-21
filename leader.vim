@@ -157,6 +157,8 @@ nnoremap <silent> <leader>wr :wincmd r<CR>
 nnoremap <silent> <leader>wo :BOnly<CR>
 nnoremap <silent> <Leader>w[ :vertical resize -15<CR>
 nnoremap <silent> <Leader>w] :vertical resize +15<CR>
+nnoremap <silent> <Leader>w+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>w- :exe "resize " . (winheight(0) * 2/3)<CR>
 nnoremap <silent> <Leader>wv :vsplit<CR>
 
 
@@ -169,6 +171,10 @@ let g:which_key_map.w = {
 	\ 'o': 'Kill Other',
 	\ 'v': 'Vertical split',
 	\ 'r': 'Rotate',
+	\ '[': 'Vertical reduce size',
+	\ ']': 'Vertical increase size',
+	\ '+': 'Increase size',
+	\ '-': 'Decrease size'
   \ }
 
 " --------------------------------------------------  MISC section
