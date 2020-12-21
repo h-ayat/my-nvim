@@ -110,14 +110,11 @@ let g:which_key_map.g = {
 " --------------------------------------------------  Git section
 " --------------------------------------------------  <leader>g
 nnoremap <leader>gs :G<CR>
-nnoremap <leader>gl :diffget //3<CR>
-nnoremap <leader>gh :diffget //2<CR>
 nnoremap <leader>gb :GBranches<CR>
 nnoremap <leader>gd :Gvdiffsplit<CR>
 nnoremap <leader>gv :GV<CR>
 nnoremap <leader>gV :GV 
 nnoremap <leader>gp :Gpush<CR>
-
 nnoremap <leader>ggs :GitGutterStageHunk<CR>
 nnoremap <leader>ggu :GitGutterUndoHunk<CR>
 
@@ -135,8 +132,21 @@ let g:which_key_map.g = {
 	\ 'v': 'Graph with GV',
 	\ 'V': 'Graph with GV branches',
 	\ 'p': 'Push',
+	\ 'm': '3way merge v-split',
+	\ 'n': 'Next Conflict',
   \ }
 
+nnoremap <leader>gcl :diffget //3<CR>
+nnoremap <leader>gch :diffget //2<CR>
+nnoremap <leader>gcv :Gvdiffsplit!<CR>
+nnoremap <leader>gcn /<<<<<<<<CR>:noh<CR>
+let g:which_key_map.g.c = {
+  \ 'name': '+Conflicts',
+	\ 'l': 'Diff get right',
+	\ 'h': 'Diff get left',
+	\ 'v': '3way vertical conflict diff split',
+	\ 'n': 'Next conflict',
+	\ }
 
 nnoremap <leader>gfa :KgitFetchAll
 nnoremap <leader>gfc :KgitFetchCurrent
