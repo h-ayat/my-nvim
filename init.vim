@@ -16,7 +16,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
-Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'stsewd/fzf-checkout.vim'
