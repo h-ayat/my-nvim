@@ -31,6 +31,8 @@ let g:maplocalleader = ','
 " c: COC
 " l: Registers
 " b: Buffers
+
+
 " ---- Actions ------
 "  o: Outline
 "  s: Symbols
@@ -82,6 +84,7 @@ nnoremap <silent> <Leader>bv :vsplit<CR>
 nnoremap <silent> <Leader>bn :bn<CR>
 nnoremap <silent> <Leader>bp :bp<CR>
 nnoremap <silent> <Leader>bd :bd<CR>
+nnoremap <Leader>bD :call delete(expand('%')) <bar> bdelete!<CR>
 
 nnoremap <silent> <leader>br :wincmd r<CR>
 
@@ -95,6 +98,7 @@ let g:which_key_map.b = {
 	\ 'd' : 'Kill this',
 	\ '[' : 'Smaller (V)',
 	\ ']' : 'Larger (V)',
+	\ 'D' : 'Delete buffer and file',
   \ }
 
 " --------------------------------------------------  Registers section
