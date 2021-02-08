@@ -203,6 +203,7 @@ nnoremap <leader>mp [`
 nnoremap <leader>mk :Maps<CR>
 nnoremap <leader>mc :Commands<CR>
 
+
 let g:which_key_map.m = {
 	\ 'name': '+MISC',
 	\ 'y': 'YankUp',
@@ -216,6 +217,16 @@ let g:which_key_map.m = {
 	\ 'k': 'Key-bindings',
   \ }
 
+nnoremap <leader>mvv :MarkdownPreview<CR>
+nnoremap <leader>mvs :MarkdownPreviewStop<CR>
+nnoremap <leader>mvt :MarkdownPreviewToggle<CR>
+
+let g:which_key_map.m.v = {
+	\ 'name': '+Markdown',
+	\ 'v': 'Start Preview',
+	\ 's': 'Stop Preview',
+	\ 't': 'Toggle Preview',
+	\ }
 " --------------------------------------------------  COC-Explorer section
 " --------------------------------------------------  <leader>t
 "   COC-Explorer
