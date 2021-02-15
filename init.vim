@@ -24,6 +24,8 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'frazrepo/vim-rainbow'
 Plug 'kshenoy/vim-signature'
 
+Plug 'chr4/nginx.vim'
+
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 

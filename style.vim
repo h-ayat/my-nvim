@@ -3,17 +3,12 @@ set termguicolors
 set t_Co=256
 set t_AB=^[[48;5;%dm
 set t_AF=^[[38;5;%dm
-set tabstop=2
 set encoding=utf-8                      
 set fileencoding=utf-8
 set number relativenumber
 set ru
 set autowriteall
 set iskeyword+=-
-set shiftwidth=2
-set smarttab
-set smartindent
-set autoindent
 set updatetime=300
 set timeoutlen=300
 set nobackup
@@ -23,6 +18,12 @@ set shortmess+=c
 set signcolumn=yes
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set ignorecase
+
+set autoindent
+set smarttab
+set smartindent
+set tabstop=2
+set shiftwidth=2
 
 let g:gruvbox_contrast_dark = 'hard'
 
@@ -67,3 +68,5 @@ let g:airline_theme='onedark'
 
 let g:rainbow_active = 1
 
+" nginx config files
+au BufRead,BufNewFile *.conf.tmpl set filetype=nginx
